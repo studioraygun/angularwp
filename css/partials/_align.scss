@@ -1,0 +1,97 @@
+/*----------------------------------*\
+	#align
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	elements to style their alignment
+ */
+
+/**
+ *	Applies to all content inside the element
+ */
+.sm-align-center{
+	text-align:center;
+}
+	@media #{$md}{
+		.md-align-center{
+			text-align:center;
+		}
+	}
+	@media #{$lg}{
+		.lg-align-center{
+			text-align:center;
+		}
+	}
+	@media #{$xl}{
+		.xl-align-center{
+			text-align:center;
+		}
+	}
+
+.sm-align-left{
+	text-align:left;
+}
+	@media #{$md}{
+		.md-align-left{
+			text-align:left;
+		}
+	}
+	@media #{$lg}{
+		.lg-align-left{
+			text-align:left;
+		}
+	}
+	@media #{$xl}{
+		.xl-align-left{
+			text-align:left;
+		}
+	}
+
+.sm-align-right{
+	text-align:right;
+}
+	@media #{$md}{
+		.md-align-right{
+			text-align:right;
+		}
+	}
+	@media #{$lg}{
+		.lg-align-right{
+			text-align:right;
+		}
+	}
+	@media #{$xl}{
+		.xl-align-right{
+			text-align:right;
+		}
+	}
+
+
+.sm-align-justify{
+	text-align:justify;
+}
+	@media #{$md}{
+		.md-align-justify{
+			text-align:justify;
+		}
+	}
+	@media #{$lg}{
+		.lg-align-justify{
+			text-align:justify;
+		}
+	}
+	@media #{$xl}{
+		.xl-align-justify{
+			text-align:justify;
+		}
+	}
+
+/**
+ *	Applies to the element itself
+ */
+.element-center{
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	float:none;
+}

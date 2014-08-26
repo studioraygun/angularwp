@@ -1,0 +1,30 @@
+/**
+ *	Animate the view
+ */
+.view-animate{
+	-webkit-transition:all 0.5s ease-out;
+}
+.view-animate.ng-enter{
+	opacity:0;
+	transition-delay:0.5s;
+}
+.view-animate.ng-enter-active{
+	opacity:1;
+}
+.view-animate.ng-leave{
+	opacity:1;
+}
+.view-animate.ng-leave-active{
+	opacity:0;
+}
+/*
+@-webkit-keyframes drop-in{
+	0% { left: -30px; opacity:0; }
+	100% { left: 0; opacity:1; }
+}
+.animate{
+	position:relative;
+	-webkit-animation: drop-in 0.5s cubic-bezier(.05,1.25,.61,1);
+	-webkit-animation-delay: 1s;
+	-webkit-animation-fill-mode: backwards;
+}*/

@@ -1,0 +1,40 @@
+/*----------------------------------*\
+	#enter
+\*----------------------------------*/
+/**
+ *	Defines a set of classes used by jQuery appear
+ * 	to transition elements onto the page
+ */
+
+/**
+ *	This class defines the element as animatable
+ */
+@mixin enter{
+    opacity:0;
+    position:relative;
+}
+
+/**
+ *	Define the animation distance
+ */
+$distance:-25px;
+
+/**
+ *	These classes define the direction of the animation
+ */
+.enter--from-top{
+	@include enter;
+	top:$distance;
+}
+.enter--from-right{
+	@include enter;
+	right:$distance;
+}
+.enter--from-bottom{
+	@include enter;
+	bottom:$distance;
+}
+.enter--from-left{
+	@include enter;
+	left:$distance;
+}

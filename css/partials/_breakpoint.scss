@@ -1,0 +1,13 @@
+/*----------------------------------*\
+	#breakpoint
+\*----------------------------------*/
+/**
+ *	Define some global breakpoints. Note that we
+ *	do not need to define 'sm' because this is
+ * 	implicit given the mobile-first nature of the 
+ *	framework
+ */
+
+$md:'only screen and(min-width:480px)';
+$lg:'only screen and(min-width:769px)';
+$xl:'only screen and(min-width:960px)';

@@ -1,0 +1,33 @@
+/*----------------------------------*\
+	#reset
+\*----------------------------------*/
+/**
+ *	Basic reset
+ */
+
+html,body{
+	margin:0;
+	line-height:1;
+	text-rendering:optimizeLegibility; // http://usabilitypost.com/2012/11/06/optimize-legibility/
+}
+h1,h2,h3,h4,h5,h6,p,fieldset,input,button,textarea,blockquote,dl,dt,dd{
+	margin:0;
+	padding:0;
+	font-size:100%;
+}
+a:active,
+a:hover,
+input,
+textarea {
+  outline: 0;
+}
+img,fieldset,input,button,textarea {
+  border: 0;
+}
+input,textarea{
+	box-sizing:border-box;
+	margin-right: -4px; // Remove the spacing between inline-block elements (http://css-tricks.com/fighting-the-space-between-inline-block-elements/)
+}
+button{
+	background:none;
+}

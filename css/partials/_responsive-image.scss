@@ -1,0 +1,12 @@
+/*----------------------------------*\
+	#responsive-image
+\*----------------------------------*/
+/**
+ *	Nothing complicated here, simply creates a Bootstrap-esque
+ *	responsive image class so images scale on browser width
+ */
+
+.img-responsive{
+	display:block;
+	max-width:100%;
+}

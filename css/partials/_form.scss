@@ -1,0 +1,97 @@
+/*----------------------------------*\
+	#form
+\*----------------------------------*/
+/**
+ *	Form
+ *	
+ *	Some classes for rapid form layout
+ */
+
+/**
+ *	Setup selector
+ */
+$selector:'form-item';
+
+/**
+ *	Setup variable input widths
+ */
+.sm-#{$selector}_one-quarter{
+	width:25%;
+}
+.sm-#{$selector}_one-third{
+	width:33%;
+}
+.sm-#{$selector}_one-half{
+	width:50%;
+}
+.sm-#{$selector}_two-thirds{
+	width:75%;
+}
+.sm-#{$selector}_full-width{
+	width:100%;
+}
+	@media #{$md}{
+		.md-#{$selector}_one-quarter{
+			width:25%;
+		}
+		.md-#{$selector}_one-third{
+			width:33%;
+		}
+		.md-#{$selector}_one-half{
+			width:50%;
+		}
+		.md-#{$selector}_two-thirds{
+			width:75%;
+		}
+		.md-#{$selector}_full-width{
+			width:100%;
+		}
+	}
+
+	@media #{$lg}{
+		.lg-#{$selector}_one-quarter{
+			width:25%;
+		}
+		.lg-#{$selector}_one-third{
+			width:33%;
+		}
+		.lg-#{$selector}_one-half{
+			width:50%;
+		}
+		.lg-#{$selector}_two-thirds{
+			width:75%;
+		}
+		.lg-#{$selector}_full-width{
+			width:100%;
+		}
+	}
+
+	@media #{$xl}{
+		.xl-#{$selector}_one-quarter{
+			width:25%;
+		}
+		.xl-#{$selector}_one-third{
+			width:33%;
+		}
+		.xl-#{$selector}_one-half{
+			width:50%;
+		}
+		.xl-#{$selector}_two-thirds{
+			width:75%;
+		}
+		.xl-#{$selector}_full-width{
+			width:100%;
+		}
+	}
+
+/**
+ *	Form stacking
+ *
+ *	We can choose to stack form elements using
+ *	the class below
+ */
+.form-stacked{
+	label,input,textarea,button{
+		display:block;
+	}
+}

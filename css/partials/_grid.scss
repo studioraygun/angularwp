@@ -1,0 +1,167 @@
+/*----------------------------------*\
+	#grid
+\*----------------------------------*/
+
+/**
+ *	Setup the row
+ */
+.container{
+	margin:auto;
+}
+
+ /**
+ *	Setup the row
+ */
+.row{
+
+	&:after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+	}
+}
+
+/**
+ *	Ensure boxes placed in a row sit next
+ *	to each other and don't flow to next row
+ */
+*:before, *:after, *{
+	box-sizing:border-box;
+}
+
+/**
+ *	Setup the columns
+ */
+.sm-col-12,.sm-col-11,.sm-col-10,.sm-col-9,.sm-col-8,.sm-col-7,.sm-col-6,.sm-col-5,.sm-col-4,.sm-col-3,.sm-col-2,.sm-col-1,
+.md-col-12,.md-col-11,.md-col-10,.md-col-9,.md-col-8,.md-col-7,.md-col-6,.md-col-5,.md-col-4,.md-col-3,.md-col-2,.md-col-1,
+.lg-col-12,.lg-col-11,.lg-col-10,.lg-col-9,.lg-col-8,.lg-col-7,.lg-col-6,.lg-col-5,.lg-col-4,.lg-col-3,.lg-col-2,.lg-col-1,
+.xl-col-12,.xl-col-11,.xl-col-10,.xl-col-9,.xl-col-8,.xl-col-7,.xl-col-6,.xl-col-5,.xl-col-4,.xl-col-3,.xl-col-2,.xl-col-1{
+	position:relative;
+	float:left;
+	display:inline;
+	min-height:1px;
+}
+
+.sm-col-12{
+	width:100%;
+}
+.sm-col-11{
+	width:91.6666666667%;
+}
+.sm-col-10{
+	width:83.3333333333%;
+}
+.sm-col-9{
+	width:75%;
+}
+.sm-col-8{
+	width:66.6666666667%;
+}
+.sm-col-7{
+	width:58.3333333333%;
+}
+.sm-col-6{
+	width:50%;
+}
+.sm-col-5{
+	width:41.6666666667%;
+}
+.sm-col-4{
+	width:33.3333333333%;
+}
+.sm-col-3{
+	width:25%;
+}
+.sm-col-2{
+	width:16.6666666667%;
+}
+.sm-col-1{
+	width:8.33333333333%;
+}
+
+@media #{$md}{
+	.container{
+		max-width:740px;
+	}
+	.md-col-12{
+		width:100%;
+	}
+	.md-col-11{
+		width:91.6666666667%;
+	}
+	.md-col-10{
+		width:83.3333333333%;
+	}
+	.md-col-9{
+		width:75%;
+	}
+	.md-col-8{
+		width:66.6666666667%;
+	}
+	.md-col-7{
+		width:58.3333333333%;
+	}
+	.md-col-6{
+		width:50%;
+	}
+	.md-col-5{
+		width:41.6666666667%;
+	}
+	.md-col-4{
+		width:33.3333333333%;
+	}
+	.md-col-3{
+		width:25%;
+	}
+	.md-col-2{
+		width:16.6666666667%;
+	}
+	.md-col-1{
+		width:8.33333333333%;
+	}
+}
+
+@media #{$lg}{
+	.container{
+		max-width:960px;
+	}
+	.lg-col-12{
+		width:100%;
+	}
+	.lg-col-11{
+		width:91.6666666667%;
+	}
+	.lg-col-10{
+		width:83.3333333333%;
+	}
+	.lg-col-9{
+		width:75%;
+	}
+	.lg-col-8{
+		width:66.6666666667%;
+	}
+	.lg-col-7{
+		width:58.3333333333%;
+	}
+	.lg-col-6{
+		width:50%;
+	}
+	.lg-col-5{
+		width:41.6666666667%;
+	}
+	.lg-col-4{
+		width:33.3333333333%;
+	}
+	.lg-col-3{
+		width:25%;
+	}
+	.lg-col-2{
+		width:16.6666666667%;
+	}
+	.lg-col-1{
+		width:8.33333333333%;
+	}
+}

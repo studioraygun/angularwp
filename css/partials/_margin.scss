@@ -1,0 +1,433 @@
+/*----------------------------------*\
+	#margin
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to add margins
+ *
+ *	Usage:
+ *	<h2 class="lg-margin-bottom">
+ *		Heading
+ *	</h2>
+ *	This will add a bottom margin of 30px to
+ *	the h2 heading element at >768px screen width
+ */
+
+/**
+ *	Setup selector
+ */
+$selector:'margin';
+
+/**
+ *	Setup base values
+ *	$spacing_base is defined in _base.scss however you may
+ *	override this value by redefining it here if required
+ */
+$spacing_md:$spacing_base*2;
+$spacing_lg:$spacing_base*3;
+$spacing_xl:$spacing_base*4;
+
+/**
+ *	Setup margins
+ *
+ *	Margins are flexible and can be configured by both
+ *	screen size and actual value, for example:
+ *
+ *	<div class="sm_margin-bottom_md xl_margin-bottom_lg">
+ *		Some content
+ *	</div>
+ *	This would mean:
+ *		On a small screen, a medium margin-bottom would be applied 
+ *		On an extra-large screen, a large margin-bottom would be applied
+ *
+ *	This allows finer control over the spacing of 
+ *	elements at various breakpoints.
+ */
+
+ /**
+ *	Margin all
+ */
+.sm-#{$selector}-all_sm{
+	margin:$spacing_base;
+}
+	.sm-#{$selector}-all_md{
+		margin:$spacing_md;
+	}
+	.sm-#{$selector}-all_lg{
+		margin:$spacing_lg;
+	}
+	.sm-#{$selector}-all_xl{
+		margin:$spacing_xl;
+	}
+	.sm-#{$selector}-all_null{
+		margin:0;
+	}
+
+/**
+ *	Margin top (sm)
+ */
+.sm-#{$selector}-top_sm{
+	margin-top:$spacing_base;
+}
+	.sm-#{$selector}-top_md{
+		margin-top:$spacing_md;
+	}
+	.sm-#{$selector}-top_lg{
+		margin-top:$spacing_lg;
+	}
+	.sm-#{$selector}-top_xl{
+		margin-top:$spacing_xl;
+	}
+	.sm-#{$selector}-top_null{
+		margin:0;
+	}
+
+/**
+ *	Margin right (sm)
+ */
+.sm-#{$selector}-right_sm{
+	margin-right:$spacing_base;
+}
+	.sm-#{$selector}-right_md{
+		margin-right:$spacing_md;
+	}
+	.sm-#{$selector}-right_lg{
+		margin-right:$spacing_lg;
+	}
+	.sm-#{$selector}-right_xl{
+		margin-right:$spacing_xl;
+	}
+	.sm-#{$selector}-right_null{
+		margin:0;
+	}
+
+/**
+ *	Margin bottom (sm)
+ */
+.sm-#{$selector}-bottom_sm{
+	margin-bottom:$spacing_base;
+}
+	.sm-#{$selector}-bottom_md{
+		margin-bottom:$spacing_md;
+	}
+	.sm-#{$selector}-bottom_lg{
+		margin-bottom:$spacing_lg;
+	}
+	.sm-#{$selector}-bottom_xl{
+		margin-bottom:$spacing_xl;
+	}
+	.sm-#{$selector}-bottom_null{
+		margin:0;
+	}
+
+/**
+ *	Margin left (sm)
+ */
+.sm-#{$selector}-left_sm{
+	margin-left:$spacing_base;
+}
+	.sm-#{$selector}-left_md{
+		margin-left:$spacing_md;
+	}
+	.sm-#{$selector}-left_lg{
+		margin-left:$spacing_lg;
+	}
+	.sm-#{$selector}-left_xl{
+		margin-left:$spacing_xl;
+	}
+	.sm-#{$selector}-left_null{
+		margin:0;
+	}
+
+
+	@media #{$md}{
+		/**
+		 *	Margin all (md)
+		 */
+		.md-#{$selector}-all_sm{
+			margin:$spacing_base;
+		}
+			.md-#{$selector}-all_md{
+				margin:$spacing_md;
+			}
+			.md-#{$selector}-all_lg{
+				margin:$spacing_lg;
+			}
+			.md-#{$selector}-all_xl{
+				margin:$spacing_xl;
+			}
+			.md-#{$selector}-all_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin top (md)
+		 */
+		.md-#{$selector}-top_sm{
+			margin-top:$spacing_base;
+		}
+			.md-#{$selector}-top_md{
+				margin-top:$spacing_md;
+			}
+			.md-#{$selector}-top_lg{
+				margin-top:$spacing_lg;
+			}
+			.md-#{$selector}-top_xl{
+				margin-top:$spacing_xl;
+			}
+			.md-#{$selector}-top_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin right (md)
+		 */
+		.md-#{$selector}-right_sm{
+			margin-right:$spacing_base;
+		}
+			.md-#{$selector}-right_md{
+				margin-right:$spacing_md;
+			}
+			.md-#{$selector}-right_lg{
+				margin-right:$spacing_lg;
+			}
+			.md-#{$selector}-right_xl{
+				margin-right:$spacing_xl;
+			}
+			.md-#{$selector}-right_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin bottom (md)
+		 */
+		.md-#{$selector}-bottom_sm{
+			margin-bottom:$spacing_base;
+		}
+			.md-#{$selector}-bottom_md{
+				margin-bottom:$spacing_md;
+			}
+			.md-#{$selector}-bottom_lg{
+				margin-bottom:$spacing_lg;
+			}
+			.md-#{$selector}-bottom_xl{
+				margin-bottom:$spacing_xl;
+			}
+			.md-#{$selector}-bottom_null{
+				margin:0;
+			}
+			.md-#{$selector}-bottom_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin left (md)
+		 */
+		.md-#{$selector}-left_sm{
+			margin-left:$spacing_base;
+		}
+			.md-#{$selector}-left_md{
+				margin-left:$spacing_md;
+			}
+			.md-#{$selector}-left_lg{
+				margin-left:$spacing_lg;
+			}
+			.md-#{$selector}-left_xl{
+				margin-left:$spacing_xl;
+			}
+			.md-#{$selector}-left_null{
+				margin:0;
+			}
+	}
+	@media #{$lg}{
+		/**
+		 *	Margin all (lg)
+		 */
+		.lg-#{$selector}-all_sm{
+			margin:$spacing_base;
+		}
+			.lg-#{$selector}-all_md{
+				margin:$spacing_md;
+			}
+			.lg-#{$selector}-all_lg{
+				margin:$spacing_lg;
+			}
+			.lg-#{$selector}-all_xl{
+				margin:$spacing_xl;
+			}
+			.lg-#{$selector}-all_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin top (lg)
+		 */
+		.lg-#{$selector}-top_sm{
+			margin-top:$spacing_base;
+		}
+			.lg-#{$selector}-top_md{
+				margin-top:$spacing_md;
+			}
+			.lg-#{$selector}-top_lg{
+				margin-top:$spacing_lg;
+			}
+			.lg-#{$selector}-top_xl{
+				margin-top:$spacing_xl;
+			}
+			.lg-#{$selector}-top_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin right (lg)
+		 */
+		.lg-#{$selector}-right_sm{
+			margin-right:$spacing_base;
+		}
+			.lg-#{$selector}-right_md{
+				margin-right:$spacing_md;
+			}
+			.lg-#{$selector}-right_lg{
+				margin-right:$spacing_lg;
+			}
+			.lg-#{$selector}-right_xl{
+				margin-right:$spacing_xl;
+			}
+			.lg-#{$selector}-right_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin bottom (lg)
+		 */
+		.lg-#{$selector}-bottom_sm{
+			margin-bottom:$spacing_base;
+		}
+			.lg-#{$selector}-bottom_md{
+				margin-bottom:$spacing_md;
+			}
+			.lg-#{$selector}-bottom_lg{
+				margin-bottom:$spacing_lg;
+			}
+			.lg-#{$selector}-bottom_xl{
+				margin-bottom:$spacing_xl;
+			}
+			.lg-#{$selector}-bottom_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin left (lg)
+		 */
+		.lg-#{$selector}-left_sm{
+			margin-left:$spacing_base;
+		}
+			.lg-#{$selector}-left_md{
+				margin-left:$spacing_md;
+			}
+			.lg-#{$selector}-left_lg{
+				margin-left:$spacing_lg;
+			}
+			.lg-#{$selector}-left_xl{
+				margin-left:$spacing_xl;
+			}
+			.lg-#{$selector}-left_null{
+				margin:0;
+			}
+	}
+	@media #{$xl}{
+		/**
+		 *	Margin all (xl)
+		 */
+		.xl-#{$selector}-all_sm{
+			margin:$spacing_base;
+		}
+			.xl-#{$selector}-all_md{
+				margin:$spacing_md;
+			}
+			.xl-#{$selector}-all_lg{
+				margin:$spacing_lg;
+			}
+			.xl-#{$selector}-all_xl{
+				margin:$spacing_xl;
+			}
+			.xl-#{$selector}-all_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin top (xl)
+		 */
+		.xl-#{$selector}-top_sm{
+			margin-top:$spacing_base;
+		}
+			.xl-#{$selector}-top_md{
+				margin-top:$spacing_md;
+			}
+			.xl-#{$selector}-top_lg{
+				margin-top:$spacing_lg;
+			}
+			.xl-#{$selector}-top_xl{
+				margin-top:$spacing_xl;
+			}
+			.xl-#{$selector}-top_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin right (xl)
+		 */
+		.xl-#{$selector}-right_sm{
+			margin-right:$spacing_base;
+		}
+			.xl-#{$selector}-right_md{
+				margin-right:$spacing_md;
+			}
+			.xl-#{$selector}-right_lg{
+				margin-right:$spacing_lg;
+			}
+			.xl-#{$selector}-right_xl{
+				margin-right:$spacing_xl;
+			}
+			.xl-#{$selector}-right_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin bottom (xl)
+		 */
+		.xl-#{$selector}-bottom_sm{
+			margin-bottom:$spacing_base;
+		}
+			.xl-#{$selector}-bottom_md{
+				margin-bottom:$spacing_md;
+			}
+			.xl-#{$selector}-bottom_lg{
+				margin-bottom:$spacing_lg;
+			}
+			.xl-#{$selector}-bottom_xl{
+				margin-bottom:$spacing_xl;
+			}
+			.xl-#{$selector}-bottom_null{
+				margin:0;
+			}
+
+		/**
+		 *	Margin left (xl)
+		 */
+		.xl-#{$selector}-left_sm{
+			margin-left:$spacing_base;
+		}
+			.xl-#{$selector}-left_md{
+				margin-left:$spacing_md;
+			}
+			.xl-#{$selector}-left_lg{
+				margin-left:$spacing_lg;
+			}
+			.xl-#{$selector}-left_xl{
+				margin-left:$spacing_xl;
+			}
+			.xl-#{$selector}-left_null{
+				margin:0;
+			}
+	}

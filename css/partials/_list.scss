@@ -1,0 +1,27 @@
+/*----------------------------------*\
+	#list
+\*----------------------------------*/
+/**
+ *	List
+ *	
+ *	Define some styles which can be used when a list
+ *	should not appear as a standard list (i.e. bulleted)
+ */
+
+/**
+ *	Removes the list-style and padding
+ */
+.list-ui{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+/**
+ *	Styles the list items to display in a row
+ */
+.list-inline{
+	li{
+		display:inline-block;
+	}
+}

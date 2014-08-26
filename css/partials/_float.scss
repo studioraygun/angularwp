@@ -1,0 +1,59 @@
+/*----------------------------------*\
+	#float
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	elements to float them left or right
+ */
+
+/**
+ *	Styles for floated items at various screen sizes
+ */
+
+.sm-float-left{
+	float:left;
+}
+	@media #{$md}{
+		.md-float-left{
+			float:left;
+		}
+	}
+	@media #{$lg}{
+		.lg-float-left{
+			float:left;
+		}
+	}
+	@media #{$xl}{
+		.xl-float-left{
+			float:left;
+		}
+	}
+
+.sm-float-right{
+	float:right;
+}
+	@media #{$md}{
+		.md-float-right{
+			float:right;
+		}
+	}
+	@media #{$lg}{
+		.lg-float-right{
+			float:right;
+		}
+	}
+	@media #{$xl}{
+		.xl-float-right{
+			float:right;
+		}
+	}
+
+/**
+ *	Clearfix
+ */
+.clearfix{
+	display:block;
+	content:" ";
+	clear:both;
+	overflow:hidden;
+}

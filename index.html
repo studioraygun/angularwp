@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DemoApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title ng-bind="title"></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        
+        <!-- include AngularJS plus modules -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.22/angular-route.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.22/angular-animate.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.22/angular-resource.min.js"></script>
+        <script src="https://code.angularjs.org/1.2.22/angular-sanitize.min.js"></script>
+
+        <!-- include custom AngularJS files -->
+        <script src="js/app.js"></script>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+        <!-- include custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+    <body>
+
+        <header>
+
+            <h1>AngularJS/Wordpress demo</h1>
+
+            <ul ng-controller="MenuController">
+                <li><a ng-class="{ active:isActive('/') }" href="#/">Home</a></li>
+                <li><a ng-class="{ active:isActive('/about') }" href="#/about">About</a></li>
+                <li><a ng-class="{ active:isActive('/services') }" href="#/services">Services</a></li>
+                <li><a ng-class="{ active:isActive('/blog') }" href="#/blog">Blog</a></li>
+            </ul>
+
+        </header>
+
+        <section>
+
+            <div class="view-animate-container">
+
+                <div ng-view class="view-animate"></div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p><a href="/wordpress/api/get_posts/">See API</a></p>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,40 @@
+/*----------------------------------*\
+	#hide
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to hide it at variouse sizes
+ *
+ *	Usage:
+ *	<div class="md-hide">
+ *		Some content
+ *	</div>
+ *	This will hide the div on >480 screen
+ */
+
+/**
+ *	Setup selector
+ */
+$selector:'hide';
+
+/**
+ *	Create the class
+ */
+.sm-#{$selector}{
+	display:none;
+}
+	@media #{$md}{
+		.md-#{$selector}{
+			display:none;
+		}
+	}
+	@media #{$lg}{
+		.lg-#{$selector}{
+			display:none;
+		}
+	}
+	@media #{$xl}{
+		.xl-#{$selector}{
+			display:none;
+		}
+	}

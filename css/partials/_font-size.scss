@@ -1,0 +1,126 @@
+/*----------------------------------*\
+	#font-size
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	any typographical element
+ *
+ *	Usage:
+ *	<p class="sm-font-size_md md-font-size_xl">
+ *		Some text
+ *	</p>
+ *	This will display "Some text" at medium size on
+ *	the small breakpoint and extra large size on
+ *	the medium breakpoint
+ *
+ *	Note that on sites that use user-generated content
+ *	from a database you will still need to define
+ *	static classes for your typographical requirements
+ *	
+ */
+
+/**
+ *	Setup selector
+ */
+$selector:'font-size';
+
+/**
+ *	Setup base values
+ *	$font_base is defined in _base.scss however you may
+ *	override this value by redefining it here if required
+ */
+$font_md:$font_base+6;
+$font_lg:$font_base+10;
+$font_xl:$font_base+14;
+$font_xxl:$font_base+24;
+
+/**
+ *	Setup font sizes
+ */
+.sm-#{$selector}_sm{
+	font-size:$font_base;
+	line-height:$font_base*1.35;
+}
+.sm-#{$selector}_md{
+	font-size:$font_md;
+	line-height:$font_md*1.35;
+}
+.sm-#{$selector}_lg{
+	font-size:$font_lg;
+	line-height:$font_lg*1.35;
+}
+.sm-#{$selector}_xl{
+	font-size:$font_xl;
+	line-height:$font_xl*1.35;
+}
+.sm-#{$selector}_xxl{
+	font-size:$font_xxl;
+	line-height:$font_xxl*1.35;
+}
+
+	@media #{$md}{
+		.md-#{$selector}_sm{
+			font-size:$font_base;
+			line-height:$font_base*1.35;
+		}
+		.md-#{$selector}_md{
+			font-size:$font_md;
+			line-height:$font_md*1.35;
+		}
+		.md-#{$selector}_lg{
+			font-size:$font_lg;
+			line-height:$font_lg*1.35;
+		}
+		.md-#{$selector}_xl{
+			font-size:$font_xl;
+			line-height:$font_xl*1.35;
+		}
+		.md-#{$selector}_xxl{
+			font-size:$font_xxl;
+			line-height:$font_xxl*1.35;
+		}
+	}
+	@media #{$lg}{
+		.lg-#{$selector}_sm{
+			font-size:$font_base;
+			line-height:$font_base*1.35;
+		}
+		.lg-#{$selector}_md{
+			font-size:$font_md;
+			line-height:$font_md*1.35;
+		}
+		.lg-#{$selector}_lg{
+			font-size:$font_lg;
+			line-height:$font_lg*1.35;
+		}
+		.lg-#{$selector}_xl{
+			font-size:$font_xl;
+			line-height:$font_xl*1.35;
+		}
+		.lg-#{$selector}_xxl{
+			font-size:$font_xxl;
+			line-height:$font_xxl*1.35;
+		}
+	}
+	@media #{$xl}{
+		.xl-#{$selector}_sm{
+			font-size:$font_base;
+			line-height:$font_base*1.35;
+		}
+		.xl-#{$selector}_md{
+			font-size:$font_md;
+			line-height:$font_md*1.35;
+		}
+		.xl-#{$selector}_lg{
+			font-size:$font_lg;
+			line-height:$font_lg*1.35;
+		}
+		.xl-#{$selector}_xl{
+			font-size:$font_xl;
+			line-height:$font_xl*1.35;
+		}
+		.xl-#{$selector}_xxl{
+			font-size:$font_xxl;
+			line-height:$font_xxl*1.35;
+		}
+	}

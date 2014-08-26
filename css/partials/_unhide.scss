@@ -1,0 +1,40 @@
+/*----------------------------------*\
+	#unhide
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to hide it at variouse sizes
+ *
+ *	Usage:
+ *	<div class="sm-hide md-unhide">
+ *		Some content
+ *	</div>
+ *	This will hide the div on 320 screen and unhide >480
+ */
+
+/**
+ *	Setup selector
+ */
+$selector:'unhide';
+
+/**
+ *	Create the class
+ */
+.sm-#{$selector}{
+	display:block;
+}
+	@media #{$md}{
+		.md-#{$selector}{
+			display:block;
+		}
+	}
+	@media #{$lg}{
+		.lg-#{$selector}{
+			display:block;
+		}
+	}
+	@media #{$xl}{
+		.xl-#{$selector}{
+			display:block;
+		}
+	}

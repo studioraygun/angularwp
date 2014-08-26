@@ -1,0 +1,1805 @@
+/*----------------------------------*\
+	#reset
+\*----------------------------------*/
+/**
+ *	Basic reset
+ */
+html, body {
+  margin: 0;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6, p, fieldset, input, button, textarea, blockquote, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+a:active,
+a:hover,
+input,
+textarea {
+  outline: 0;
+}
+
+img, fieldset, input, button, textarea {
+  border: 0;
+}
+
+input, textarea {
+  box-sizing: border-box;
+  margin-right: -4px;
+}
+
+button {
+  background: none;
+}
+
+/*----------------------------------*\
+	#base
+\*----------------------------------*/
+/**
+ *	Define base (interior and exterior) spacing
+ */
+/**
+ *	Define base font-size
+ */
+/*----------------------------------*\
+	#breakpoint
+\*----------------------------------*/
+/**
+ *	Define some global breakpoints. Note that we
+ *	do not need to define 'sm' because this is
+ * 	implicit given the mobile-first nature of the 
+ *	framework
+ */
+/*----------------------------------*\
+	#grid
+\*----------------------------------*/
+/**
+ *	Setup the row
+ */
+.container {
+  margin: auto;
+}
+
+/**
+*	Setup the row
+*/
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/**
+ *	Ensure boxes placed in a row sit next
+ *	to each other and don't flow to next row
+ */
+*:before, *:after, * {
+  box-sizing: border-box;
+}
+
+/**
+ *	Setup the columns
+ */
+.sm-col-12, .sm-col-11, .sm-col-10, .sm-col-9, .sm-col-8, .sm-col-7, .sm-col-6, .sm-col-5, .sm-col-4, .sm-col-3, .sm-col-2, .sm-col-1,
+.md-col-12, .md-col-11, .md-col-10, .md-col-9, .md-col-8, .md-col-7, .md-col-6, .md-col-5, .md-col-4, .md-col-3, .md-col-2, .md-col-1,
+.lg-col-12, .lg-col-11, .lg-col-10, .lg-col-9, .lg-col-8, .lg-col-7, .lg-col-6, .lg-col-5, .lg-col-4, .lg-col-3, .lg-col-2, .lg-col-1,
+.xl-col-12, .xl-col-11, .xl-col-10, .xl-col-9, .xl-col-8, .xl-col-7, .xl-col-6, .xl-col-5, .xl-col-4, .xl-col-3, .xl-col-2, .xl-col-1 {
+  position: relative;
+  float: left;
+  display: inline;
+  min-height: 1px;
+}
+
+.sm-col-12 {
+  width: 100%;
+}
+
+.sm-col-11 {
+  width: 91.6666666667%;
+}
+
+.sm-col-10 {
+  width: 83.3333333333%;
+}
+
+.sm-col-9 {
+  width: 75%;
+}
+
+.sm-col-8 {
+  width: 66.6666666667%;
+}
+
+.sm-col-7 {
+  width: 58.3333333333%;
+}
+
+.sm-col-6 {
+  width: 50%;
+}
+
+.sm-col-5 {
+  width: 41.6666666667%;
+}
+
+.sm-col-4 {
+  width: 33.3333333333%;
+}
+
+.sm-col-3 {
+  width: 25%;
+}
+
+.sm-col-2 {
+  width: 16.6666666667%;
+}
+
+.sm-col-1 {
+  width: 8.33333333333%;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .md-col-12 {
+    width: 100%;
+  }
+
+  .md-col-11 {
+    width: 91.6666666667%;
+  }
+
+  .md-col-10 {
+    width: 83.3333333333%;
+  }
+
+  .md-col-9 {
+    width: 75%;
+  }
+
+  .md-col-8 {
+    width: 66.6666666667%;
+  }
+
+  .md-col-7 {
+    width: 58.3333333333%;
+  }
+
+  .md-col-6 {
+    width: 50%;
+  }
+
+  .md-col-5 {
+    width: 41.6666666667%;
+  }
+
+  .md-col-4 {
+    width: 33.3333333333%;
+  }
+
+  .md-col-3 {
+    width: 25%;
+  }
+
+  .md-col-2 {
+    width: 16.6666666667%;
+  }
+
+  .md-col-1 {
+    width: 8.33333333333%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .lg-col-12 {
+    width: 100%;
+  }
+
+  .lg-col-11 {
+    width: 91.6666666667%;
+  }
+
+  .lg-col-10 {
+    width: 83.3333333333%;
+  }
+
+  .lg-col-9 {
+    width: 75%;
+  }
+
+  .lg-col-8 {
+    width: 66.6666666667%;
+  }
+
+  .lg-col-7 {
+    width: 58.3333333333%;
+  }
+
+  .lg-col-6 {
+    width: 50%;
+  }
+
+  .lg-col-5 {
+    width: 41.6666666667%;
+  }
+
+  .lg-col-4 {
+    width: 33.3333333333%;
+  }
+
+  .lg-col-3 {
+    width: 25%;
+  }
+
+  .lg-col-2 {
+    width: 16.6666666667%;
+  }
+
+  .lg-col-1 {
+    width: 8.33333333333%;
+  }
+}
+/*----------------------------------*\
+	#margin
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to add margins
+ *
+ *	Usage:
+ *	<h2 class="lg-margin-bottom">
+ *		Heading
+ *	</h2>
+ *	This will add a bottom margin of 30px to
+ *	the h2 heading element at >768px screen width
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Setup base values
+ *	$spacing_base is defined in _base.scss however you may
+ *	override this value by redefining it here if required
+ */
+/**
+ *	Setup margins
+ *
+ *	Margins are flexible and can be configured by both
+ *	screen size and actual value, for example:
+ *
+ *	<div class="sm_margin-bottom_md xl_margin-bottom_lg">
+ *		Some content
+ *	</div>
+ *	This would mean:
+ *		On a small screen, a medium margin-bottom would be applied 
+ *		On an extra-large screen, a large margin-bottom would be applied
+ *
+ *	This allows finer control over the spacing of 
+ *	elements at various breakpoints.
+ */
+/**
+*	Margin all
+*/
+.sm-margin-all_sm {
+  margin: 10px;
+}
+
+.sm-margin-all_md {
+  margin: 20px;
+}
+
+.sm-margin-all_lg {
+  margin: 30px;
+}
+
+.sm-margin-all_xl {
+  margin: 40px;
+}
+
+.sm-margin-all_null {
+  margin: 0;
+}
+
+/**
+ *	Margin top (sm)
+ */
+.sm-margin-top_sm {
+  margin-top: 10px;
+}
+
+.sm-margin-top_md {
+  margin-top: 20px;
+}
+
+.sm-margin-top_lg {
+  margin-top: 30px;
+}
+
+.sm-margin-top_xl {
+  margin-top: 40px;
+}
+
+.sm-margin-top_null {
+  margin: 0;
+}
+
+/**
+ *	Margin right (sm)
+ */
+.sm-margin-right_sm {
+  margin-right: 10px;
+}
+
+.sm-margin-right_md {
+  margin-right: 20px;
+}
+
+.sm-margin-right_lg {
+  margin-right: 30px;
+}
+
+.sm-margin-right_xl {
+  margin-right: 40px;
+}
+
+.sm-margin-right_null {
+  margin: 0;
+}
+
+/**
+ *	Margin bottom (sm)
+ */
+.sm-margin-bottom_sm {
+  margin-bottom: 10px;
+}
+
+.sm-margin-bottom_md {
+  margin-bottom: 20px;
+}
+
+.sm-margin-bottom_lg {
+  margin-bottom: 30px;
+}
+
+.sm-margin-bottom_xl {
+  margin-bottom: 40px;
+}
+
+.sm-margin-bottom_null {
+  margin: 0;
+}
+
+/**
+ *	Margin left (sm)
+ */
+.sm-margin-left_sm {
+  margin-left: 10px;
+}
+
+.sm-margin-left_md {
+  margin-left: 20px;
+}
+
+.sm-margin-left_lg {
+  margin-left: 30px;
+}
+
+.sm-margin-left_xl {
+  margin-left: 40px;
+}
+
+.sm-margin-left_null {
+  margin: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  /**
+   *	Margin all (md)
+   */
+  .md-margin-all_sm {
+    margin: 10px;
+  }
+
+  .md-margin-all_md {
+    margin: 20px;
+  }
+
+  .md-margin-all_lg {
+    margin: 30px;
+  }
+
+  .md-margin-all_xl {
+    margin: 40px;
+  }
+
+  .md-margin-all_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin top (md)
+   */
+  .md-margin-top_sm {
+    margin-top: 10px;
+  }
+
+  .md-margin-top_md {
+    margin-top: 20px;
+  }
+
+  .md-margin-top_lg {
+    margin-top: 30px;
+  }
+
+  .md-margin-top_xl {
+    margin-top: 40px;
+  }
+
+  .md-margin-top_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin right (md)
+   */
+  .md-margin-right_sm {
+    margin-right: 10px;
+  }
+
+  .md-margin-right_md {
+    margin-right: 20px;
+  }
+
+  .md-margin-right_lg {
+    margin-right: 30px;
+  }
+
+  .md-margin-right_xl {
+    margin-right: 40px;
+  }
+
+  .md-margin-right_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin bottom (md)
+   */
+  .md-margin-bottom_sm {
+    margin-bottom: 10px;
+  }
+
+  .md-margin-bottom_md {
+    margin-bottom: 20px;
+  }
+
+  .md-margin-bottom_lg {
+    margin-bottom: 30px;
+  }
+
+  .md-margin-bottom_xl {
+    margin-bottom: 40px;
+  }
+
+  .md-margin-bottom_null {
+    margin: 0;
+  }
+
+  .md-margin-bottom_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin left (md)
+   */
+  .md-margin-left_sm {
+    margin-left: 10px;
+  }
+
+  .md-margin-left_md {
+    margin-left: 20px;
+  }
+
+  .md-margin-left_lg {
+    margin-left: 30px;
+  }
+
+  .md-margin-left_xl {
+    margin-left: 40px;
+  }
+
+  .md-margin-left_null {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /**
+   *	Margin all (lg)
+   */
+  .lg-margin-all_sm {
+    margin: 10px;
+  }
+
+  .lg-margin-all_md {
+    margin: 20px;
+  }
+
+  .lg-margin-all_lg {
+    margin: 30px;
+  }
+
+  .lg-margin-all_xl {
+    margin: 40px;
+  }
+
+  .lg-margin-all_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin top (lg)
+   */
+  .lg-margin-top_sm {
+    margin-top: 10px;
+  }
+
+  .lg-margin-top_md {
+    margin-top: 20px;
+  }
+
+  .lg-margin-top_lg {
+    margin-top: 30px;
+  }
+
+  .lg-margin-top_xl {
+    margin-top: 40px;
+  }
+
+  .lg-margin-top_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin right (lg)
+   */
+  .lg-margin-right_sm {
+    margin-right: 10px;
+  }
+
+  .lg-margin-right_md {
+    margin-right: 20px;
+  }
+
+  .lg-margin-right_lg {
+    margin-right: 30px;
+  }
+
+  .lg-margin-right_xl {
+    margin-right: 40px;
+  }
+
+  .lg-margin-right_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin bottom (lg)
+   */
+  .lg-margin-bottom_sm {
+    margin-bottom: 10px;
+  }
+
+  .lg-margin-bottom_md {
+    margin-bottom: 20px;
+  }
+
+  .lg-margin-bottom_lg {
+    margin-bottom: 30px;
+  }
+
+  .lg-margin-bottom_xl {
+    margin-bottom: 40px;
+  }
+
+  .lg-margin-bottom_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin left (lg)
+   */
+  .lg-margin-left_sm {
+    margin-left: 10px;
+  }
+
+  .lg-margin-left_md {
+    margin-left: 20px;
+  }
+
+  .lg-margin-left_lg {
+    margin-left: 30px;
+  }
+
+  .lg-margin-left_xl {
+    margin-left: 40px;
+  }
+
+  .lg-margin-left_null {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /**
+   *	Margin all (xl)
+   */
+  .xl-margin-all_sm {
+    margin: 10px;
+  }
+
+  .xl-margin-all_md {
+    margin: 20px;
+  }
+
+  .xl-margin-all_lg {
+    margin: 30px;
+  }
+
+  .xl-margin-all_xl {
+    margin: 40px;
+  }
+
+  .xl-margin-all_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin top (xl)
+   */
+  .xl-margin-top_sm {
+    margin-top: 10px;
+  }
+
+  .xl-margin-top_md {
+    margin-top: 20px;
+  }
+
+  .xl-margin-top_lg {
+    margin-top: 30px;
+  }
+
+  .xl-margin-top_xl {
+    margin-top: 40px;
+  }
+
+  .xl-margin-top_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin right (xl)
+   */
+  .xl-margin-right_sm {
+    margin-right: 10px;
+  }
+
+  .xl-margin-right_md {
+    margin-right: 20px;
+  }
+
+  .xl-margin-right_lg {
+    margin-right: 30px;
+  }
+
+  .xl-margin-right_xl {
+    margin-right: 40px;
+  }
+
+  .xl-margin-right_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin bottom (xl)
+   */
+  .xl-margin-bottom_sm {
+    margin-bottom: 10px;
+  }
+
+  .xl-margin-bottom_md {
+    margin-bottom: 20px;
+  }
+
+  .xl-margin-bottom_lg {
+    margin-bottom: 30px;
+  }
+
+  .xl-margin-bottom_xl {
+    margin-bottom: 40px;
+  }
+
+  .xl-margin-bottom_null {
+    margin: 0;
+  }
+
+  /**
+   *	Margin left (xl)
+   */
+  .xl-margin-left_sm {
+    margin-left: 10px;
+  }
+
+  .xl-margin-left_md {
+    margin-left: 20px;
+  }
+
+  .xl-margin-left_lg {
+    margin-left: 30px;
+  }
+
+  .xl-margin-left_xl {
+    margin-left: 40px;
+  }
+
+  .xl-margin-left_null {
+    margin: 0;
+  }
+}
+/*----------------------------------*\
+	#font-size
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	any typographical element
+ *
+ *	Usage:
+ *	<p class="sm-font-size_md md-font-size_xl">
+ *		Some text
+ *	</p>
+ *	This will display "Some text" at medium size on
+ *	the small breakpoint and extra large size on
+ *	the medium breakpoint
+ *
+ *	Note that on sites that use user-generated content
+ *	from a database you will still need to define
+ *	static classes for your typographical requirements
+ *	
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Setup base values
+ *	$font_base is defined in _base.scss however you may
+ *	override this value by redefining it here if required
+ */
+/**
+ *	Setup font sizes
+ */
+.sm-font-size_sm {
+  font-size: 10px;
+  line-height: 13.5px;
+}
+
+.sm-font-size_md {
+  font-size: 16px;
+  line-height: 21.6px;
+}
+
+.sm-font-size_lg {
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.sm-font-size_xl {
+  font-size: 24px;
+  line-height: 32.4px;
+}
+
+.sm-font-size_xxl {
+  font-size: 34px;
+  line-height: 45.9px;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-font-size_sm {
+    font-size: 10px;
+    line-height: 13.5px;
+  }
+
+  .md-font-size_md {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+
+  .md-font-size_lg {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .md-font-size_xl {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+
+  .md-font-size_xxl {
+    font-size: 34px;
+    line-height: 45.9px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-font-size_sm {
+    font-size: 10px;
+    line-height: 13.5px;
+  }
+
+  .lg-font-size_md {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+
+  .lg-font-size_lg {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .lg-font-size_xl {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+
+  .lg-font-size_xxl {
+    font-size: 34px;
+    line-height: 45.9px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-font-size_sm {
+    font-size: 10px;
+    line-height: 13.5px;
+  }
+
+  .xl-font-size_md {
+    font-size: 16px;
+    line-height: 21.6px;
+  }
+
+  .xl-font-size_lg {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .xl-font-size_xl {
+    font-size: 24px;
+    line-height: 32.4px;
+  }
+
+  .xl-font-size_xxl {
+    font-size: 34px;
+    line-height: 45.9px;
+  }
+}
+/*----------------------------------*\
+	#padding
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to add padding
+ *
+ *	Usage:
+ *	<div class="sm-padding-left lg-padding-all">
+ *		Some content
+ *	</div>
+ *	This will add left padding to element on <480 screen
+ *	and top/right/bottom/left padding to element at >768 screen
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Setup base values
+ *	$spacing_base is defined in _base.scss however you may
+ *	override this value by redefining it here if required
+ */
+/**
+ *	Padding all
+ */
+.sm-padding-all_sm {
+  padding: 10px;
+}
+
+.sm-padding-all_md {
+  padding: 15px;
+}
+
+.sm-padding-all_lg {
+  padding: 20px;
+}
+
+.sm-padding-all_xl {
+  padding: 80px;
+}
+
+.sm-padding-all_null {
+  padding: 0;
+}
+
+/**
+ *	Padding top (sm)
+ */
+.sm-padding-top_sm {
+  padding-top: 10px;
+}
+
+.sm-padding-top_md {
+  padding-top: 15px;
+}
+
+.sm-padding-top_lg {
+  padding-top: 20px;
+}
+
+.sm-padding-top_xl {
+  padding-top: 80px;
+}
+
+.sm-padding-top_null {
+  padding: 0;
+}
+
+/**
+ *	Padding right (sm)
+ */
+.sm-padding-right_sm {
+  padding-right: 10px;
+}
+
+.sm-padding-right_md {
+  padding-right: 15px;
+}
+
+.sm-padding-right_lg {
+  padding-right: 20px;
+}
+
+.sm-padding-right_xl {
+  padding-right: 80px;
+}
+
+.sm-padding-right_null {
+  padding: 0;
+}
+
+/**
+ *	Padding bottom (sm)
+ */
+.sm-padding-bottom_sm {
+  padding-bottom: 10px;
+}
+
+.sm-padding-bottom_md {
+  padding-bottom: 15px;
+}
+
+.sm-padding-bottom_lg {
+  padding-bottom: 20px;
+}
+
+.sm-padding-bottom_xl {
+  padding-bottom: 80px;
+}
+
+.sm-padding-bottom_null {
+  padding: 0;
+}
+
+/**
+ *	Padding left (sm)
+ */
+.sm-padding-left_sm {
+  padding-left: 10px;
+}
+
+.sm-padding-left_md {
+  padding-left: 15px;
+}
+
+.sm-padding-left_lg {
+  padding-left: 20px;
+}
+
+.sm-padding-left_xl {
+  padding-left: 80px;
+}
+
+.sm-padding-left_null {
+  padding: 0;
+}
+
+@media only screen and (min-width: 480px) {
+  /**
+   *	Padding all (md)
+   */
+  .md-padding-all_sm {
+    padding: 10px;
+  }
+
+  .md-padding-all_md {
+    padding: 15px;
+  }
+
+  .md-padding-all_lg {
+    padding: 20px;
+  }
+
+  .md-padding-all_xl {
+    padding: 80px;
+  }
+
+  .md-padding-all_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding top (md)
+   */
+  .md-padding-top_sm {
+    padding-top: 10px;
+  }
+
+  .md-padding-top_md {
+    padding-top: 15px;
+  }
+
+  .md-padding-top_lg {
+    padding-top: 20px;
+  }
+
+  .md-padding-top_xl {
+    padding-top: 80px;
+  }
+
+  .md-padding-top_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding right (md)
+   */
+  .md-padding-right_sm {
+    padding-right: 10px;
+  }
+
+  .md-padding-right_md {
+    padding-right: 15px;
+  }
+
+  .md-padding-right_lg {
+    padding-right: 20px;
+  }
+
+  .md-padding-right_xl {
+    padding-right: 80px;
+  }
+
+  .md-padding-right_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding bottom (md)
+   */
+  .md-padding-bottom_sm {
+    padding-bottom: 10px;
+  }
+
+  .md-padding-bottom_md {
+    padding-bottom: 15px;
+  }
+
+  .md-padding-bottom_lg {
+    padding-bottom: 20px;
+  }
+
+  .md-padding-bottom_xl {
+    padding-bottom: 80px;
+  }
+
+  .md-padding-bottom_null {
+    padding: 0;
+  }
+
+  .md-padding-bottom_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding left (md)
+   */
+  .md-padding-left_sm {
+    padding-left: 10px;
+  }
+
+  .md-padding-left_md {
+    padding-left: 15px;
+  }
+
+  .md-padding-left_lg {
+    padding-left: 20px;
+  }
+
+  .md-padding-left_xl {
+    padding-left: 80px;
+  }
+
+  .md-padding-left_null {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /**
+   *	Padding all (lg)
+   */
+  .lg-padding-all_sm {
+    padding: 10px;
+  }
+
+  .lg-padding-all_md {
+    padding: 15px;
+  }
+
+  .lg-padding-all_lg {
+    padding: 20px;
+  }
+
+  .lg-padding-all_xl {
+    padding: 80px;
+  }
+
+  .lg-padding-all_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding top (lg)
+   */
+  .lg-padding-top_sm {
+    padding-top: 10px;
+  }
+
+  .lg-padding-top_md {
+    padding-top: 15px;
+  }
+
+  .lg-padding-top_lg {
+    padding-top: 20px;
+  }
+
+  .lg-padding-top_xl {
+    padding-top: 80px;
+  }
+
+  .lg-padding-top_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding right (lg)
+   */
+  .lg-padding-right_sm {
+    padding-right: 10px;
+  }
+
+  .lg-padding-right_md {
+    padding-right: 15px;
+  }
+
+  .lg-padding-right_lg {
+    padding-right: 20px;
+  }
+
+  .lg-padding-right_xl {
+    padding-right: 80px;
+  }
+
+  .lg-padding-right_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding bottom (lg)
+   */
+  .lg-padding-bottom_sm {
+    padding-bottom: 10px;
+  }
+
+  .lg-padding-bottom_md {
+    padding-bottom: 15px;
+  }
+
+  .lg-padding-bottom_lg {
+    padding-bottom: 20px;
+  }
+
+  .lg-padding-bottom_xl {
+    padding-bottom: 80px;
+  }
+
+  .lg-padding-bottom_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding left (lg)
+   */
+  .lg-padding-left_sm {
+    padding-left: 10px;
+  }
+
+  .lg-padding-left_md {
+    padding-left: 15px;
+  }
+
+  .lg-padding-left_lg {
+    padding-left: 20px;
+  }
+
+  .lg-padding-left_xl {
+    padding-left: 80px;
+  }
+
+  .lg-padding-left_null {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /**
+   *	Padding all (xl)
+   */
+  .xl-padding-all_sm {
+    padding: 10px;
+  }
+
+  .xl-padding-all_md {
+    padding: 15px;
+  }
+
+  .xl-padding-all_lg {
+    padding: 20px;
+  }
+
+  .xl-padding-all_xl {
+    padding: 80px;
+  }
+
+  .xl-padding-all_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding top (xl)
+   */
+  .xl-padding-top_sm {
+    padding-top: 10px;
+  }
+
+  .xl-padding-top_md {
+    padding-top: 15px;
+  }
+
+  .xl-padding-top_lg {
+    padding-top: 20px;
+  }
+
+  .xl-padding-top_xl {
+    padding-top: 80px;
+  }
+
+  .xl-padding-top_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding right (xl)
+   */
+  .xl-padding-right_sm {
+    padding-right: 10px;
+  }
+
+  .xl-padding-right_md {
+    padding-right: 15px;
+  }
+
+  .xl-padding-right_lg {
+    padding-right: 20px;
+  }
+
+  .xl-padding-right_xl {
+    padding-right: 80px;
+  }
+
+  .xl-padding-right_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding bottom (xl)
+   */
+  .xl-padding-bottom_sm {
+    padding-bottom: 10px;
+  }
+
+  .xl-padding-bottom_md {
+    padding-bottom: 15px;
+  }
+
+  .xl-padding-bottom_lg {
+    padding-bottom: 20px;
+  }
+
+  .xl-padding-bottom_xl {
+    padding-bottom: 80px;
+  }
+
+  .xl-padding-bottom_null {
+    padding: 0;
+  }
+
+  /**
+   *	Padding left (xl)
+   */
+  .xl-padding-left_sm {
+    padding-left: 10px;
+  }
+
+  .xl-padding-left_md {
+    padding-left: 15px;
+  }
+
+  .xl-padding-left_lg {
+    padding-left: 20px;
+  }
+
+  .xl-padding-left_xl {
+    padding-left: 80px;
+  }
+
+  .xl-padding-left_null {
+    padding: 0;
+  }
+}
+/*----------------------------------*\
+	#responsive-image
+\*----------------------------------*/
+/**
+ *	Nothing complicated here, simply creates a Bootstrap-esque
+ *	responsive image class so images scale on browser width
+ */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+/*----------------------------------*\
+	#hide
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to hide it at variouse sizes
+ *
+ *	Usage:
+ *	<div class="md-hide">
+ *		Some content
+ *	</div>
+ *	This will hide the div on >480 screen
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Create the class
+ */
+.sm-hide {
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-hide {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-hide {
+    display: none;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-hide {
+    display: none;
+  }
+}
+/*----------------------------------*\
+	#unhide
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to any
+ *	type of element to hide it at variouse sizes
+ *
+ *	Usage:
+ *	<div class="sm-hide md-unhide">
+ *		Some content
+ *	</div>
+ *	This will hide the div on 320 screen and unhide >480
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Create the class
+ */
+.sm-unhide {
+  display: block;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-unhide {
+    display: block;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-unhide {
+    display: block;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-unhide {
+    display: block;
+  }
+}
+/*----------------------------------*\
+	#list
+\*----------------------------------*/
+/**
+ *	List
+ *	
+ *	Define some styles which can be used when a list
+ *	should not appear as a standard list (i.e. bulleted)
+ */
+/**
+ *	Removes the list-style and padding
+ */
+.list-ui {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ *	Styles the list items to display in a row
+ */
+.list-inline li {
+  display: inline-block;
+}
+
+/*----------------------------------*\
+	#form
+\*----------------------------------*/
+/**
+ *	Form
+ *	
+ *	Some classes for rapid form layout
+ */
+/**
+ *	Setup selector
+ */
+/**
+ *	Setup variable input widths
+ */
+.sm-form-item_one-quarter {
+  width: 25%;
+}
+
+.sm-form-item_one-third {
+  width: 33%;
+}
+
+.sm-form-item_one-half {
+  width: 50%;
+}
+
+.sm-form-item_two-thirds {
+  width: 75%;
+}
+
+.sm-form-item_full-width {
+  width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-form-item_one-quarter {
+    width: 25%;
+  }
+
+  .md-form-item_one-third {
+    width: 33%;
+  }
+
+  .md-form-item_one-half {
+    width: 50%;
+  }
+
+  .md-form-item_two-thirds {
+    width: 75%;
+  }
+
+  .md-form-item_full-width {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-form-item_one-quarter {
+    width: 25%;
+  }
+
+  .lg-form-item_one-third {
+    width: 33%;
+  }
+
+  .lg-form-item_one-half {
+    width: 50%;
+  }
+
+  .lg-form-item_two-thirds {
+    width: 75%;
+  }
+
+  .lg-form-item_full-width {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-form-item_one-quarter {
+    width: 25%;
+  }
+
+  .xl-form-item_one-third {
+    width: 33%;
+  }
+
+  .xl-form-item_one-half {
+    width: 50%;
+  }
+
+  .xl-form-item_two-thirds {
+    width: 75%;
+  }
+
+  .xl-form-item_full-width {
+    width: 100%;
+  }
+}
+/**
+ *	Form stacking
+ *
+ *	We can choose to stack form elements using
+ *	the class below
+ */
+.form-stacked label, .form-stacked input, .form-stacked textarea, .form-stacked button {
+  display: block;
+}
+
+/*----------------------------------*\
+	#align
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	elements to style their alignment
+ */
+/**
+ *	Applies to all content inside the element
+ */
+.sm-align-center {
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-align-center {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-align-center {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-align-center {
+    text-align: center;
+  }
+}
+.sm-align-left {
+  text-align: left;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-align-left {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-align-left {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-align-left {
+    text-align: left;
+  }
+}
+.sm-align-right {
+  text-align: right;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-align-right {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-align-right {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-align-right {
+    text-align: right;
+  }
+}
+.sm-align-justify {
+  text-align: justify;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-align-justify {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-align-justify {
+    text-align: justify;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-align-justify {
+    text-align: justify;
+  }
+}
+/**
+ *	Applies to the element itself
+ */
+.element-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+}
+
+/*----------------------------------*\
+	#float
+\*----------------------------------*/
+/**
+ *	Helper classes which may be applied to
+ *	elements to float them left or right
+ */
+/**
+ *	Styles for floated items at various screen sizes
+ */
+.sm-float-left {
+  float: left;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-float-left {
+    float: left;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-float-left {
+    float: left;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-float-left {
+    float: left;
+  }
+}
+.sm-float-right {
+  float: right;
+}
+
+@media only screen and (min-width: 480px) {
+  .md-float-right {
+    float: right;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .lg-float-right {
+    float: right;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .xl-float-right {
+    float: right;
+  }
+}
+/**
+ *	Clearfix
+ */
+.clearfix {
+  display: block;
+  content: " ";
+  clear: both;
+  overflow: hidden;
+}
+
+/*----------------------------------*\
+	#caps
+\*----------------------------------*/
+/**
+ *	Defines a class which can be used on text
+ *	elements to make them uppercase
+ */
+.caps {
+  text-transform: uppercase;
+}
+
+/*----------------------------------*\
+	#enter
+\*----------------------------------*/
+/**
+ *	Defines a set of classes used by jQuery appear
+ * 	to transition elements onto the page
+ */
+/**
+ *	This class defines the element as animatable
+ */
+/**
+ *	Define the animation distance
+ */
+/**
+ *	These classes define the direction of the animation
+ */
+.enter--from-top {
+  opacity: 0;
+  position: relative;
+  top: -25px;
+}
+
+.enter--from-right {
+  opacity: 0;
+  position: relative;
+  right: -25px;
+}
+
+.enter--from-bottom {
+  opacity: 0;
+  position: relative;
+  bottom: -25px;
+}
+
+.enter--from-left {
+  opacity: 0;
+  position: relative;
+  left: -25px;
+}
