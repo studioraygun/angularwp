@@ -17,7 +17,7 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
         controller: 'GetPage'
     })
     .when('/about', {
-    	title: 'About GoFast',
+    	title: 'About Site',
     	templateUrl: '/partials/page.html',
     	controller: 'GetPage'
     })
