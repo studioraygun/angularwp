@@ -13,3 +13,7 @@
 	<h4><a href="#/blog/{{ post.categories[0].slug }}/{{ post.slug }}">{{ post.title }}</a> - {{ post.categories[0].title }}</h4>
 	<div ng-bind-html="post.excerpt"></div>
 </div>
+
+<a ng-show="prev > 0" href="#/blog/page/{{ prev }}">Prev</a> |
+Page {{ page }} | 
+<a ng-show="next <= paging.pages" href="#/blog/page/{{ next }}">Next</a>

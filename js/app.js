@@ -31,6 +31,11 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
         templateUrl: '/partials/blog.html',
         controller: 'BlogList'
     })
+    .when('/blog/page/:page', {
+        title: 'Read Our Blog',
+        templateUrl: '/partials/blog.html',
+        controller: 'BlogList'
+    })
     .when('/blog/:category', {
         title: '',
         templateUrl: '/partials/blog.html',
@@ -104,14 +109,44 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
     }
     else
     {
-        /**
-         *  If not parameter supplied, just get all posts
-         */
-        var url = $http.get('/wordpress/api/get_posts');
+        if($routeParams.page)
+        {
+            /**
+             *  If a page parameter has been passed, send this to the API
+             */
+            var url = $http.get('/wordpress/api/get_posts/?page=' + $routeParams.page);
+        }
+        else
+        {
+            /**
+             *  If no parameter supplied, just get all posts
+             */
+            var url = $http.get('/wordpress/api/get_posts');
+
+            // Set a default paging value
+            $scope.page = 1;
+            // Set a default next value
+            $scope.next = 2;
+        }
     }
     url
     .success(function(data, status, headers, config){
+        /**
+         *  Pass data from the feed to the view.
+         *  $scope.posts will pass exclusively post data
+         *  $scope.paging will pass the whole feed and will be used to work out paging
+         */
         $scope.posts = data.posts;
+        $scope.paging = data;
+
+        if($routeParams.page)
+        {
+            // Get current page
+            $scope.page = $routeParams.page;
+            // Caluculate next/previous values
+            $scope.next = parseInt($routeParams.page)+1;
+            $scope.prev = parseInt($routeParams.page)-1;
+        }
     })
     .error(function(data, status, headers, config){
         window.alert("We have been unable to access the feed :-(");
