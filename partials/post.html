@@ -10,4 +10,12 @@
 
 <div ng-bind-html="post.post.content"></div>
 
+<div ng-repeat="comment in comments" style="border-bottom:1px solid #999; margin-bottom:40px;">
+	<div>
+		By <span ng-bind-html="comment.name"></span>
+		on <span ng-bind-html="comment.date"></span>
+	</div>
+	<div ng-bind-html="comment.content"></div>
+</div>
+
 <p><a href="#/blog">Back to the blog</a></p>

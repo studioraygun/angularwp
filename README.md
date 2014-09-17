@@ -10,5 +10,5 @@ To do:
 
 * Pagination -- done
 * Remove hash from URLs
-* Show comments on posts
+* Show comments on posts -- done
 * Page titles

@@ -163,6 +163,7 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
     $http.get('/wordpress/api/get_post/?slug=' + $routeParams.post)
     .success(function(data, status, headers, config){
         $scope.post = data;
+        $scope.comments = data.post.comments;
     })
     .error(function(data, status, headers, config){
         window.alert("We have been unable to access the feed :-(");
