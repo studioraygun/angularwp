@@ -8,7 +8,7 @@ See http://studioraygun.co.uk/blog/angularjs-front-end-wordpress-back-end
 
 To do:
 
-* Pagination -- done
+* <s>Pagination</s>
 * Remove hash from URLs
-* Show comments on posts -- done
+* <s>Show comments on posts</s>
 * Page titles
