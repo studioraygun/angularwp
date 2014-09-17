@@ -11,4 +11,4 @@ To do:
 * <s>Pagination</s>
 * Remove hash from URLs
 * <s>Show comments on posts</s>
-* Page titles
+* <s>Page titles</s>
