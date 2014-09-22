@@ -11,6 +11,6 @@ Site: http://angularwp.srgunltd.co.uk
 To do:
 
 * <s>Pagination</s>
-* Remove hash from URLs
+* <s>Remove hash from URLs</s>
 * <s>Show comments on posts</s>
 * <s>Page titles</s>

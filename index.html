@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="DemoApp">
     <head>
+        <base href="/" >
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>{{ title }}</title>
@@ -31,10 +32,10 @@
             <h1>AngularJS/Wordpress demo</h1>
 
             <ul ng-controller="MenuController">
-                <li><a ng-class="{ active:isActive('/') }" href="#/">Home</a></li>
-                <li><a ng-class="{ active:isActive('/about') }" href="#/about">About</a></li>
-                <li><a ng-class="{ active:isActive('/services') }" href="#/services">Services</a></li>
-                <li><a ng-class="{ active:isActive('/blog') }" href="#/blog">Blog</a></li>
+                <li><a ng-class="{ active:isActive('/') }" href="/">Home</a></li>
+                <li><a ng-class="{ active:isActive('/about') }" href="/about">About</a></li>
+                <li><a ng-class="{ active:isActive('/services') }" href="/services">Services</a></li>
+                <li><a ng-class="{ active:isActive('/blog') }" href="/blog">Blog</a></li>
             </ul>
 
         </header>

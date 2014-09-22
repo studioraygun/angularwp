@@ -43,7 +43,7 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
     /**
      *	Remove # from the URL with $locationProvider
      */
-    //$locationProvider.html5Mode(true);
+     $locationProvider.html5Mode(true).hashPrefix('!');
 }])
 
 /**
@@ -132,9 +132,10 @@ var DemoApp = angular.module('DemoApp', ['ngRoute', 'ngAnimate', 'ngResource', '
          */
         $scope.posts = data.posts;
         $scope.paging = data;
+        //console.log(data);
 
         // Inject the title into the rootScope
-        $rootScope.title = data.category.title;
+        // $rootScope.title = data.category.title;
 
         if($routeParams.page)
         {
