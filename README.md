@@ -14,3 +14,5 @@ To do:
 * <s>Remove hash from URLs</s>
 * <s>Show comments on posts</s>
 * <s>Page titles</s>
+
+See https://github.com/studioraygun/drupangular for a similar project with Drupal
